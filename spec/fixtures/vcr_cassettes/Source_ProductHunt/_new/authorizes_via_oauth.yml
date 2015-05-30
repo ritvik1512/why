@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.producthunt.com/v1/oauth/token.json?client_id=ddf62fc3484246e48f761950bc3a29ae051567287fc4fe177a96d3ac497c2228&client_secret=b48a681fa4493504ac44e853f063e37ff3b5b20cc0a8b3e4b8609b353ccefbe8&grant_type=client_credentials
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Thu, 25 Dec 2014 19:55:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dd57cec5cdbcdfdc0eacbca9dcc24975f1419537321; expires=Fri, 25-Dec-15
+        19:55:21 GMT; path=/; domain=.producthunt.com; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      Etag:
+      - '"0403f6fd6db5ec5c1d40184bfe8b6539"'
+      X-Request-Id:
+      - 7ff8c108-a069-4c05-9174-6f3076bdb32f
+      X-Runtime:
+      - '0.017636'
+      Via:
+      - 1.1 vegur
+      Cf-Ray:
+      - 19e798833dd0036e-LAX
+    body:
+      encoding: UTF-8
+      string: '{"access_token":"c79191dbdd21831376e68f57b787c2dd25950ae01e0826ac0c745bd656209b2b","token_type":"bearer","expires_in":5184000,"scope":"public"}'
+    http_version: 
+  recorded_at: Thu, 25 Dec 2014 19:55:21 GMT
+recorded_with: VCR 2.9.3
